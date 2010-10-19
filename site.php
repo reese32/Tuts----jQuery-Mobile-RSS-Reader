@@ -6,7 +6,7 @@ $siteName = empty($_GET['siteName']) ? 'nettuts' : $_GET['siteName'];
 
 $siteList = array(
    'nettuts',
-   'activetuts',
+   'flashtuts',
    'webdesigntutsplus',
    'psdtuts',
    'vectortuts',
@@ -54,6 +54,10 @@ else
 
 // Decode that shizzle
 $feed = json_decode($feed);
+
+// Activetuts is still using the old Flashtuts RSS path.
+if ( $siteName === 'flashtuts' ) $siteName = 'activetuts';
+else if ( $siteName === 'webdesigntutsplus' ) $siteName = 'webdesigntuts';
 
 // Include the view
 include('views/site.tmpl.php');
