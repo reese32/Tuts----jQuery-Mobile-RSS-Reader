@@ -4,6 +4,25 @@ ini_set('display_errors', '1');
 // If "siteName" isn't in the querystring, set the default site name to 'nettuts'
 $siteName = empty($_GET['siteName']) ? 'nettuts' : $_GET['siteName'];
 
+$siteList = array(
+   'nettuts',
+   'activetuts',
+   'webdesigntutsplus',
+   'psdtuts',
+   'vectortuts',
+   'phototuts',
+   'mobiletuts',
+   'cgtuts',
+   'audiotuts',
+   'aetuts'
+);
+
+// For security reasons. If the string isn't a site name, just change to 
+// nettuts instead.
+if ( !in_array($siteName, $siteList) ) {
+   $siteName = 'nettuts';
+}
+
 $cache = dirname(__FILE__) . "/cache/$siteName";
 // Re-cache every three hours
 if(filemtime($cache) < (time() - 10800))
