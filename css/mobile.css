@@ -3,16 +3,16 @@ header, footer { display: block; }
    top:  9px;
 }
  
-.tuts header, .tuts footer { background: #c24e00; }
-.nettuts header, .nettuts footer { background: #2d6b61; }
-.psdtuts header, .psdtuts footer { background: #af1c00; }
-.vectortuts header, .vectortuts footer { background: #1e468e; }
-.aetuts header, .aetuts footer { background: #4a3c59; }
-.phototuts header, .phototuts footer { background: #3798aa; }
-.cgtuts header, .cgtuts footer { background: #723b4a; }
-.audiotuts header, .audiotuts footer { background: #4b7e00; }
-.webdesigntutsplus header, .webdesigntutsplus footer { background: #0d533f; }
-.mobiletuts header, .mobiletuts footer { background: #dba600; }
+.tuts { background: #c24e00; }
+.nettuts { background: #2d6b61; }
+.psdtuts { background: #af1c00; }
+.vectortuts { background: #1e468e; }
+.aetuts { background: #4a3c59; }
+.phototuts { background: #3798aa; }
+.cgtuts { background: #723b4a; }
+.audiotuts { background: #4b7e00; }
+.websigntutsplus { background: #0d533f; }
+.mobiletuts { background: #dba600; }
 
 .ui-li-heading { font-size: 12px; }
 

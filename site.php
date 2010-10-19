@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
 // If "siteName" isn't in the querystring, set the default site name to 'nettuts'
 $siteName = empty($_GET['siteName']) ? 'nettuts' : $_GET['siteName'];
 

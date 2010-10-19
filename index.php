@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?> 
-<body class="tuts">
+<body>
  <div data-role="page">
-   <header data-role="header">
+   <header data-role="header" class="tuts">
      <h1>
        <img src="img/TLogo.png" alt="Tuts+" />
      </h1>
@@ -53,7 +53,7 @@
      </ul>
    </div>
 
-   <footer data-role="footer">
+   <footer data-role="footer" class="tuts">
       <h4> www.tutsplus.com </h4>
    </footer>
 
