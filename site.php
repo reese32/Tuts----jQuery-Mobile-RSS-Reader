@@ -40,7 +40,7 @@ if(filemtime($cache) < (time() - 10800))
    $feed = file_get_contents($path, true);
 
    // If something was returned, cache
-   if ( $feed->query->count ) {
+   if ( is_object($feed) && $feed->query->count ) {
       $cachefile = fopen($cache, 'wb');
       fwrite($cachefile, $feed);
       fclose($cachefile);
