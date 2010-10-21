@@ -17,8 +17,8 @@
 
             <li>
               <h2>
-                 <a href="article.php?siteName=<?php echo $siteName;?>&origLink=<?php echo $item->guid->content;?>">
-                       <?php echo $item->title; ?>
+                  <a href="article.php?siteName=<?php echo $siteName;?>&origLink=<?php echo urlencode($item->guid->content);?>">
+                 <?php echo $item->title; ?>
                  </a>
               </h2>
               <span class="ui-li-count"><?php echo $comments; ?> </span>
