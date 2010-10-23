@@ -7,7 +7,7 @@
    <title><?php echo isset($siteName) ? ucWords($siteName) : 'Tuts+'; ?></title> 
 
    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />
-   <link rel="apple-touce-icon" href="img/tutsTouchIcon.jpg" />
+   <link rel="apple-touch-icon" href="img/tutsTouchIcon.jpg" />
    <link rel="stylesheet" href="css/mobile.css" />
    <link rel="stylesheet" href="css/article.css" />
 
